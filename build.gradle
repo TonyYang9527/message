@@ -27,7 +27,12 @@ targetCompatibility = 1.8
 
 dependencies {
     compile("org.springframework.boot:spring-boot-starter-web")
+    compile('org.springframework.boot:spring-boot-starter-mail')
+    
     compile group: 'com.google.guava', name: 'guava', version: '18.0'
-  
+    /****Email****/
+    compile group: 'org.springframework', name: 'spring-context-support', version: '4.1.6.RELEASE'
+    compile group: 'javax.mail', name: 'mail', version: '1.4.7'
+    
     testCompile("junit:junit")
 }
