@@ -1,3 +1,4 @@
+/application.properties
 /com/
-/main/
-/test/
+/database-schema.sql
+/test-data.sql
