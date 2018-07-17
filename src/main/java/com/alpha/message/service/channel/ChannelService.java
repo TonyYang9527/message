@@ -16,7 +16,7 @@ import com.alpha.message.service.channel.proxy.EmailProxy;
 public class ChannelService {
 
 	/** SMS SIGNATURE. */
-	private static final String SIGNATURE = "【SIGNATURE】";
+//	private static final String SIGNATURE = "BWOIL";
 
 	@Autowired
 	protected EmailProxy emailProxy;
@@ -41,6 +41,7 @@ public class ChannelService {
 	}
 
 	private ChannelResp sendEmail(ChannelReq req) {
+		
 		EmailChannelReq emailReq = (EmailChannelReq) req;
 		Boolean isSuccess = false;
 		String result = null;

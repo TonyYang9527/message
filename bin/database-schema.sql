@@ -182,6 +182,7 @@ CREATE TABLE IF NOT EXISTS   `site_message_template` (
   `content` varchar(500) DEFAULT NULL COMMENT 'Template Content',
   `addition` varchar(400) DEFAULT NULL COMMENT 'Template Addition ',
   `type` smallint(6) NOT NULL COMMENT 'Template  Type',
+    `state` tinyint(4) NOT NULL COMMENT 'state (0:enable ,1:disable)' ,
   `priority` tinyint(4) NOT NULL COMMENT 'Priority£º1-99,1:Top priority',
   `sender` varchar(50) NOT NULL COMMENT ' Sender',
   `created_time` datetime NOT NULL ,
