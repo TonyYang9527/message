@@ -16,10 +16,10 @@ public class DriverLoader implements ApplicationContextAware {
 	@Override
 	public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
 		Map<String, BasicDriver> map = applicationContext.getBeansOfType(BasicDriver.class);
-	  	map.forEach((key, value) -> drivers.put(value.getType(), value));
+		map.forEach((key, value) -> drivers.put(value.getType(), value));
 	}
 
-	public static <T extends BasicDriver> T getDriver(DriverType type) {
-		return (T) drivers.get(type);
+	public  BasicDriver getDriver(DriverType type) {
+		return drivers.get(type);
 	}
 }

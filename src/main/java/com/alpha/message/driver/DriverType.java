@@ -3,6 +3,7 @@ package com.alpha.message.driver;
 public enum DriverType {
 
 	EMAIL("email"),
+	PUSH("push"),
 	SMS("sms");
 
 	private String type;
