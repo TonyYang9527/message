@@ -58,7 +58,7 @@ public class SQLWhereBuilder {
 
 	public static void main(String[] args) {
 		SQLWhereBuilder  sqlBuilder =	SQLWhereBuilder.instance() ;
-	    List  array =	new ArrayList<String>() ;
+	    List<String>  array =	new ArrayList<String>() ;
 	    array.add("dddd") ;
 		sqlBuilder.and(" name ", SQLOperators.In, array ) ;
 		System.out.println(sqlBuilder.toString());
