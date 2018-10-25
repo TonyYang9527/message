@@ -1,5 +1,4 @@
 package com.alpha.message.common.enums;
-
 public enum StateFlag {
 
 	ENABLE(0),

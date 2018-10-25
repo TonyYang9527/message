@@ -2,11 +2,8 @@ package com.alpha.message.common.enums;
 
 public enum MsgPriority {
 
-	// ¸ß
 	HIGH( 20),
-	// ÖÐ
 	NORMAL(40),
-	// µÍ
 	LOW( 60);
 
 	private int value;

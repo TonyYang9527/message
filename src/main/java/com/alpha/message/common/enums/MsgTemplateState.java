@@ -2,9 +2,7 @@ package com.alpha.message.common.enums;
 
 
 public enum MsgTemplateState {
-	// 启用的
     ENABLED( 0), 
-    // 禁用的
     DISABLED( 1);
 
     private int  value;

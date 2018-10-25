@@ -3,23 +3,29 @@ package com.alpha.message.model.queue;
 import java.io.Serializable;
 import java.util.Date;
 
-import com.alpha.message.model.enums.MsgType;
+import com.alpha.message.common.enums.ChannelType;
 
 public class QueuePriorityVo implements Serializable{
 
-	private static final long serialVersionUID = 1L;
+	private static final long serialVersionUID = 5405369627879800893L;
 
-    /** The id. */
     private Long id;
     private Date scheduleTime;
-    private Byte priority;
-    private MsgType msgType;
+    private Integer priority;
+    private ChannelType  channelType;
 
-    public QueuePriorityVo(Long id, Date scheduleTime, Byte priority, MsgType msgType) {
+    /**
+     *  QueuePriorityVo
+     * @param id
+     * @param scheduleTime
+     * @param priority
+     * @param msgType
+     */
+    public QueuePriorityVo(Long id, Date scheduleTime, Integer priority, ChannelType channelType) {
         this.id = id;
         this.scheduleTime = scheduleTime;
         this.priority = priority;
-        this.msgType = msgType;
+        this.channelType = channelType;
     }
 
     public Long getId() {
@@ -30,17 +36,19 @@ public class QueuePriorityVo implements Serializable{
         return scheduleTime;
     }
 
-    public Byte getPriority() {
+    public Integer getPriority() {
         return priority;
     }
 
-    public MsgType getMsgType() {
-        return msgType;
-    }
+  
+    public ChannelType getChannelType() {
+		return channelType;
+	}
 
-    @Override
+
+	@Override
     public String toString() {
-        return "QueuePriorityVo [id=" + id + ", scheduleTime=" + scheduleTime + ", priority=" + priority + ", msgType=" + msgType
+        return "QueuePriorityVo [id=" + id + ", scheduleTime=" + scheduleTime + ", priority=" + priority + ", channelType=" + channelType.getValue()
                 + "]";
     }
 }

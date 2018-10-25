@@ -1,10 +1,5 @@
 package com.alpha.message.common.enums;
 
-
-/**
- * Device Type  Enum
- */
-
 public enum DeviceType {
 
 	ANDROID(1), 

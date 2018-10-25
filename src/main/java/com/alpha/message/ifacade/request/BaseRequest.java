@@ -2,8 +2,8 @@ package com.alpha.message.ifacade.request;
 
 import java.io.Serializable;
 
-public class BaseRequest  implements Serializable {
+public class BaseRequest implements Serializable {
 
-	private static final long serialVersionUID = -4696604471922641545L;
+	private static final long serialVersionUID = -5986991579631493784L;
 
 }
